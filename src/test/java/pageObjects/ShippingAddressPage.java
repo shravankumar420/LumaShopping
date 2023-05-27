@@ -12,7 +12,7 @@ public class ShippingAddressPage {
 	}
 
 	public WebElement ShippingtextBox(String inputText) {
-		return driver.findElement(By.xpath("(//*[text()='"+inputText+"']//following::input)[1]"));	
+		return driver.findElement(By.xpath("(//*[text()='"+inputText+"']//following::input)[1]"));
 		//(//*[text()='"+inputText+"']//following::div/input)[1]
 	}
 	
