@@ -38,8 +38,5 @@ public class ShippingAddressPageStepDefinition {
 		shippingaddresspage.ShippingtextBox(path).clear();		
 		shippingaddresspage.ShippingtextBox(path).sendKeys(value);
 	}
-    @And("user click on place order")
-    public void user_click_on_place_order() throws InterruptedException {
-    	shippingaddresspage.placeOrder();
-    }
+ 
 }

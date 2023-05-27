@@ -19,8 +19,5 @@ public class ShippingAddressPage {
 		Thread.sleep(3000);
 		return driver.findElement(By.xpath("(//*[@type='email'])[2]"));
 	}
-	public void placeOrder() throws InterruptedException
-	{		
-		driver.findElement(By.xpath("(//button[@type='submit'])[4]")).sendKeys(Keys.ENTER);
-	}
+
 }
