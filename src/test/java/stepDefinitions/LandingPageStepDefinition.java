@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.*;
 import pageObjects.LandingPage;
@@ -32,7 +33,7 @@ public class LandingPageStepDefinition {
 
 	@When("user click on {string} button")
 	public void user_click_on_button(String object) throws InterruptedException {
-		landingpage.button(object).click();
+		landingpage.button(object).sendKeys(Keys.ENTER);
 	}
 	@Given("user enter random {int} char into {string}")
 	public void user_enter_random_char_into(int num, String path) {
