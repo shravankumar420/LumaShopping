@@ -11,7 +11,8 @@ public class ShippingAddressPage {
 		this.driver = driver;
 	}
 
-	public WebElement ShippingtextBox(String inputText) {
+	public WebElement ShippingtextBox(String inputText) throws InterruptedException {
+		Thread.sleep(3000);
 		return driver.findElement(By.xpath("(//*[text()='"+inputText+"']//following::input)[1]"));
 		//(//*[text()='"+inputText+"']//following::div/input)[1]
 	}

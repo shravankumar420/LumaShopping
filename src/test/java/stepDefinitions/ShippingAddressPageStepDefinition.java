@@ -22,9 +22,9 @@ public class ShippingAddressPageStepDefinition {
 	}
 	
 	@Given("user enter random {int} char into shipping address {string}")
-	public void user_enter_random_char_into_shipping_address(int num, String path) {
+	public void user_enter_random_char_into_shipping_address(int num, String path) throws InterruptedException {
 		String value=testcontextsetup.genericUtils.randomString(num);
-		shippingaddresspage.ShippingtextBox(path).clear();
+		shippingaddresspage.ShippingtextBox(path).clear();		
 		shippingaddresspage.ShippingtextBox(path).sendKeys(value);
 	}
 

@@ -9,7 +9,7 @@ And user click on "Blue" color
 And user click on "Add to Cart"
 And user click on "shopping cart"
 When user click on "Proceed to Checkout" button
-#And user enter random 10 char into shipping address "First Name"
+And user enter random 10 char into shipping address "First Name"
 And user enter random 10 char into shipping address "Last Name"
 And user enter random 10 char into shipping address "Company"
 And user enter random 10 char into shipping address "Street Address"
