@@ -21,3 +21,5 @@ And user enter random 6 number into shipping address "Zip/Postal Code"
 And user enter random 10 number into shipping address "Phone Number"
 And user click on "Fixed"
 And user click on "Next"
+And user click on place order
+And user click on "Continue Shopping"
