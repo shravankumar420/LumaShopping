@@ -17,7 +17,7 @@ public class LandingPage {
 	}
 
 	public WebElement button(String locator) {
-		return driver.findElement(By.xpath("//*[contains(@value,'"+locator+"')]"));
+		return driver.findElement(By.xpath("//*[contains(@title,'"+locator+"')]"));
 	}
 
 	public WebElement clickable(String locator) {

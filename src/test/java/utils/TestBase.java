@@ -38,15 +38,16 @@ public class TestBase {
 			} else if (browser.equalsIgnoreCase("Edge")) {
 				WebDriverManager.edgedriver().setup();
 				EdgeOptions options = new EdgeOptions();
-				options.addArguments("--start-maximized", "incognito", "disable-infobars",
-						"--headless=new");
+				options.addArguments("--start-maximized", "incognito", "disable-infobars");
+				
+				//"--headless=new"
 				driver = new EdgeDriver(options);
 			}
 
 			else {
 				System.out.println("slet the browser");
 			}
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.get(url);
 		}
 
