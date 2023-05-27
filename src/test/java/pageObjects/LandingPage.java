@@ -17,12 +17,8 @@ public class LandingPage {
 	}
 
 	public WebElement button(String locator) {
-		return driver.findElement(By.xpath("(//*[contains(@title,'"+locator+"')]"));
+		return driver.findElement(By.xpath("//*[contains(@title,'"+locator+"')]"));
 		
-	}
-	public WebElement buttonSpan(String locator) {
-		//return driver.findElement(By.xpath("//*[contains(@title,'"+locator+"')]"));
-		return driver.findElement(By.xpath("//button[@class='"+locator+"']"));
 	}
 
 	public WebElement clickable(String locator) {
