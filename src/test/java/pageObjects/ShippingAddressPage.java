@@ -6,11 +6,12 @@ import org.openqa.selenium.WebElement;
 
 public class ShippingAddressPage {
 	public WebDriver driver;
+	
 
 	public ShippingAddressPage(WebDriver driver) {
-		this.driver = driver;
+		this.driver = driver;		
 	}
-
+	
 	public WebElement ShippingtextBox(String inputText)   {
 				return driver.findElement(By.xpath("(//*[text()='"+inputText+"']//following::input)[1]"));		
 	}

@@ -32,5 +32,11 @@ public class ShippingAddressPageStepDefinition {
 		String value=testcontextsetup.genericUtils.randomString(num);		
 		shippingaddresspage.ShippingEmail().sendKeys(value+"@gmail.com");
 	}
+	@Given("user enter random {int} number into shipping address {string}")
+	public void user_enter_random_number_into_shipping_address(int num, String path)   {
+		String value=testcontextsetup.genericUtils.randomNumber(num);
+		shippingaddresspage.ShippingtextBox(path).clear();		
+		shippingaddresspage.ShippingtextBox(path).sendKeys(value);
+	}
 
 }

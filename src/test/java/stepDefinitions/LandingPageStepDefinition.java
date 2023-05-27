@@ -48,4 +48,14 @@ public class LandingPageStepDefinition {
 		public void user_click_on_color(String color) throws InterruptedException {
 			landingpage.Colorclick(color).click();
 		}
+	  @Then("user wait for {int} seconds")  
+	  public void user_wait_for_seconds(int number) throws InterruptedException
+      {
+		  Thread.sleep(number+000);
+		  }
+	  @When("user click on {string} buttonSpan")
+		public void user_click_on_buttonSpan(String object) throws InterruptedException {
+			landingpage.buttonSpan(object).click();
+		}
 }
+
