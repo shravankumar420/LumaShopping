@@ -1,5 +1,5 @@
 Feature: user orders Shorts
-@Shorts
+@Shorts @SmokeTest
 Scenario: user place order for shorts
 Given user click on "Women"
 And user click on "Shorts" from section "Bottoms"
@@ -24,7 +24,7 @@ And user click on "Next"
 And user click on "Place Order" button
 And user click on "Continue Shopping"
 
-@BagsandWatch
+@BagsandWatch @RegTest
 Scenario: user orders bags
 Given user click on "Gear"
 And user click on "Bags" link
