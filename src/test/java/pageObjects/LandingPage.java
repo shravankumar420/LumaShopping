@@ -35,4 +35,8 @@ public WebElement Colorclick(String color) {
 		//return driver.findElement(By.xpath("(//*[text()='" + object + "' or contains(text(),'" + object + "')])[1]"));
 	}
 
+	public WebElement links(String alink){
+		return driver.findElement(By.xpath("(//a[text()='"+alink+"' or contains(text(),'"+alink+"')])[1]"));
+	}
+
 }

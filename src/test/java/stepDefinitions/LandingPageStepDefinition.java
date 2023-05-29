@@ -49,4 +49,9 @@ public class LandingPageStepDefinition {
 		public void user_click_on_color(String color) throws InterruptedException {
 			landingpage.Colorclick(color).click();
 		}
+
+		@When("user click on {string} link")
+		public void user_click_on_link(String alink) throws InterruptedException {
+			landingpage.links(alink).click();
+		}
 }
