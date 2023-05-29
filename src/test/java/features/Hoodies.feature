@@ -1,5 +1,5 @@
 Feature: user orders Hoodies
-@Hoodies
+@Hoodies @SmokeTest
 Scenario: user place order for hoodies
 Given user click on "Men"
 And user click on "Hoodies & Sweatshirts" from section "Tops"
